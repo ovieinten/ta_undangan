@@ -1,0 +1,16 @@
+{
+    "name": "BEComment",
+    "alias": "becomment",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\BEComment\\Providers\\BECommentServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

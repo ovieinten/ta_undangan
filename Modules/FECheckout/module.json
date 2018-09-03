@@ -1,0 +1,16 @@
+{
+    "name": "FECheckout",
+    "alias": "fecheckout",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\FECheckout\\Providers\\FECheckoutServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

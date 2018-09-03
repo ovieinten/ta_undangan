@@ -1,0 +1,14 @@
+{
+    "name": "cooem/core",
+    "description": "general helper for laravel created by cooem",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "cscing",
+            "email": "ibnuul@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

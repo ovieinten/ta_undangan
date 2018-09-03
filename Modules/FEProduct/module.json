@@ -1,0 +1,16 @@
+{
+    "name": "FEProduct",
+    "alias": "feproduct",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\FEProduct\\Providers\\FEProductServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

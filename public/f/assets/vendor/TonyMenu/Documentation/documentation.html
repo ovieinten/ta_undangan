@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<title>TonyMenu - documentation</title>
+		<meta name="keywords" content="HTML5 Template" />
+		<meta name="description" content="TonyMenu - documentation">
+		<meta name="author" content="etheme.com">
+		<!-- Mobile Specific Metas -->
+		<!--CSS-->
+		<link rel="stylesheet" href="../lib/bootstrap/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body id="theme">
+	<style>
+		body {
+			padding-bottom: 100px;
+		}
+		h2 {
+			margin-top: 40px;
+			font-size: 24px;
+		}
+		p {
+			font-size: 16px;
+		}
+		.margin-top-40 {
+			margin-top: 40px;
+		}
+		.margin-top-20 {
+			margin-top: 20px;
+		}
+	</style>
+
+		<div class="container">
+			<row>
+				<div class="col-md-12">
+					<h1 class="text-center">TonyMenu Documentation</h1>
+				</div>
+			</row>
+
+			<row>
+				<div class="col-md-12">
+					<h2 class="text-center"">HTML</h2>
+					<table class="table table-bordered table-striped">
+						<tr>
+							<th width="140">Аттрибут</th>
+							<th>Значения</th>
+							<th width="120">По умолчанию</th>
+							<th width="80">Обязательный аттрибут</th>
+							<th>Класс</th>
+							<th>Описание</th>
+							<th width="140">Примечания</th>
+						</tr>
+						<tr>
+							<td>data-tm-style</td><!--Аттрибут-->
+							<td>'horizontal', 'vertical'</td><!--Значения-->
+							<td>-</td><!--По умолчанию-->
+							<td>+</td><!--Обязательный аттрибут-->
+							<td>.tonyMenu</td><!--Класс-->
+							<td>Определяет стиль меню: вертикальный, горизонтальный</td><!--Описание-->
+							<td>-</td><!--Примечания-->
+						</tr>
+						<tr>
+							<td>data-tm-breakpoint</td><!--Аттрибут-->
+							<td>int</td><!--Значения-->
+							<td>1024</td><!--По умолчанию-->
+							<td>-</td><!--Обязательный аттрибут-->
+							<td>.tonyMenu</td><!--Класс-->
+							<td>Брэйкпоинт мобильной версии</td><!--Описание-->
+							<td>-</td><!--Примечания-->
+						</tr>
+						<tr>
+							<td>data-tm-mobile</td><!--Аттрибут-->
+							<td>boolean</td><!--Значения-->
+							<td>false</td><!--По умолчанию-->
+							<td>-</td><!--Обязательный аттрибут-->
+							<td>.tonyMenu</td><!--Класс-->
+							<td>Активация мобильного меню</td><!--Описание-->
+							<td>-</td><!--Примечания-->
+						</tr>
+						<tr>
+							<td>data-tm-width</td><!--Аттрибут-->
+							<td>horizontal menu: int, 'menu-width', 'menu-outer-width', 'window-limit'</br></br>vertical menu: int, 'window-limit'</td><!--Значения-->
+							<td>1170</td><!--По умолчанию-->
+							<td>-</td><!--Обязательный аттрибут-->
+							<td>.tonyMenu__megamenu</td><!--Класс-->
+							<td>Ширина окна мегаменю</td><!--Описание-->
+							<td>-</td><!--Примечания-->
+						</tr>
+						<tr>
+							<td>data-tm-align-horizontal</td><!--Аттрибут-->
+							<td>[horizontal menu: 'left', 'item', 'item-center', 'left-window' </br></br> vertical menu: 'item'</td><!--Значения-->
+							<td>horizontal menu: 'left' </br></br> vertical menu: 'item'</td><!--По умолчанию-->
+							<td>-</td><!--Обязательный аттрибут-->
+							<td>.tonyMenu__megamenu</td><!--Класс-->
+							<td>Горизонтальное выравнивание окна мегаменю</td><!--Описание-->
+							<td>При парамметрах [horizontal menu: 'item', 'item-center'] игнорируются все указанные
+								параметры аттрибута data-tm-width кроме явного указания ширины [int]</td><!--Примечания-->
+						</tr>
+						<tr>
+							<td>data-tm-align-vertical</td><!--Аттрибут-->
+							<td>horizontal menu: 'item', 'menu-bottom' </br></br> vertical menu: 'menu-top', 'item-center', 'item'</td><!--Значения-->
+							<td>horizontal menu: 'item' </br></br> vertical menu: 'menu-top'</td><!--По умолчанию-->
+							<td>-</td><!--Обязательный аттрибут-->
+							<td>.tonyMenu__megamenu</td><!--Класс-->
+							<td>Вертикальное выравнивание окна мегаменю</td><!--Описание-->
+							<td>-</td><!--Примечания-->
+						</tr>
+						<tr>
+							<td>data-tm-animation,</br>
+								data-tm-animation-in,</br>
+								data-tm-animation-out</td><!--Аттрибут-->
+							<td>'toggle', 'fade', 'emersion', 'emersion-vertical'</td><!--Значения-->
+							<td>'fade'</td><!--По умолчанию-->
+							<td>-</td><!--Обязательный аттрибут-->
+							<td>.tonyMenu__megamenu</td><!--Класс-->
+							<td>Анимация  появления, скрытия окна мегаменю. Можно указать как одну анимацию на появление и скрытие, так и по отдельности</td><!--Описание-->
+							<td>При указании параметров data-tm-animation и data-tm-animation-[in, out], преймущество остаётся у
+								параметров data-tm-animation-[in, out], при чём можно указать только [in] или только [out]</td><!--Примечания-->
+						</tr>
+						<tr>
+							<td>data-tm-duration</td><!--Аттрибут-->
+							<td>int</td><!--Значения-->
+							<td>300</td><!--По умолчанию-->
+							<td>-</td><!--Обязательный аттрибут-->
+							<td>.tonyMenu__megamenu</td><!--Класс-->
+							<td>Длительность анимации появления, скрытия окна мегаменю</td><!--Описание-->
+							<td>-</td><!--Примечания-->
+						</tr>
+						<tr>
+							<td>data-tm-emersion-distance</td><!--Аттрибут-->
+							<td>int</td><!--Значения-->
+							<td>60</td><!--По умолчанию-->
+							<td>-</td><!--Обязательный аттрибут-->
+							<td>.tonyMenu__megamenu</td><!--Класс-->
+							<td>Длина движения окна мегаменю при параметрах анимации 'emersion' и 'emersion-vertical'</td><!--Описание-->
+							<td>-</td><!--Примечания-->
+						</tr>
+					</table>
+				</div>
+			</row>
+
+			<row>
+				<div class="col-md-12">
+					<h2 class="text-center">GRID</h2>
+					<p>Управление сеткой происходит добавлением класса к родителю</p>
+					<table class="table table-bordered table-striped">
+						<tr>
+							<th width="220">Схема класса сетки</th>
+							<th>Добавить к классу</th>
+							<th>Значение</th>
+							<th>Описание</th>
+							<th>Пример</th>
+						</tr>
+						<tr>
+							<td>.tonyMenu__col-[int]-[int]-[int]</td>
+							<td>.tonyMenu__megamenu</td>
+							<td>0 <= int <= 12 </br></br> Сумма чисел int#1+int#2+int#3 обязательно должна равняться 12 </br></br> 0 - выключает колонку</td>
+							<td>Основная сетка мегаменю, управляет колонками .tonyMenu__box-left, tonyMenu__box-center, tonyMenu__box-right</td>
+							<td>.tonyMenu__col-0-9-3</td>
+						</tr>
+						<tr>
+							<td>.tonyMenu__inner-col-[int]</td>
+							<td>.tonyMenu__inner-list-group, .tonyMenu__list-preview</td>
+							<td>0 < int <= 6</td>
+							<td>Управляет колонками мегаменю списка первого уравня </td>
+							<td>.tonyMenu__inner-col-3</td>
+						</tr>
+					</table>
+				</div>
+			</row>
+
+			<row>
+				<div class="col-md-12">
+					<h2 class="text-center">JavaScript</h2>
+				</div>
+
+				<div class="col-md-12">
+					<h4 class="margin-top-40">Параметры:</h4>
+					<ul>
+						<li>paddingElem - указываем к каким эллементам добавляется дополнительный padding при фиксации body</li>
+					</ul>
+					<p>Пример:</p>
+					<pre>
+paddingElem [
+	{
+		breakpoint: 'desctop' || 'mobile',
+		selector: [
+			'.selector'
+		]
+	},
+]
+					</pre>
+					<p>breakpoint - нужно выбрать на каком разрешении будет добавляться padding</p>
+					<p>selector - принимает массив строк с названиями селекторов, по которым будет происходить поиск</p>
+					<h4 class="margin-top-40">Методы:</h4>
+					<ul>
+						<li>showTonyMenu() - показать мобильное меню</li>
+						<li>hideTonyMenu() - скрыть мобильное меню</li>
+					</ul>
+					<h4 class="margin-top-40">События:</h4>
+					<table class="table table-bordered table-striped">
+							<tr>
+								<th>Событие</th>
+								<th>Описание</th>
+							</tr>
+							<tr>
+								<td>tonyMenu.initialize</td>
+								<td>Инициализация меню произведена</td>
+							</tr>
+							<tr>
+								<td>tonyMenu.megamenu.change</td>
+								<td>Начало появления и скрытия мегаменю</td>
+							</tr>
+							<tr>
+								<td>tonyMenu.megamenu.show.start</td>
+								<td> Перед появлением мегаменю (свойство мегаменю display: 'none';)</td>
+							</tr>
+							<tr>
+								<td>tonyMenu.megamenu.show.go</td>
+								<td>Старт анимации появления мегаменю (свойство мегаменю display: 'block'; opacity: '0';)</td>
+							</tr>
+							<tr>
+								<td>tonyMenu.megamenu.show.end</td>
+								<td>После окончания анимации появления мегаменю</td>
+							</tr>
+							<tr>
+								<td>tonyMenu.megamenu.hide.start</td>
+								<td>Перед скрытием мегаменю</td>
+							</tr>
+							<tr>
+								<td>tonyMenu.megamenu.hide.end</td>
+								<td>После окончания анимации скрытия мегаменю</td>
+							</tr>
+							<tr>
+								<td>tonyMenu.mobile.show.start</td>
+								<td>Перед появлением мобильного меню</td>
+							</tr>
+							<tr>
+								<td>tonyMenu.mobile.show.end</td>
+								<td>После окончания анимации появлением мобильного меню</td>
+							</tr>
+							<tr>
+								<td>tonyMenu.mobile.hide.start</td>
+								<td>Перед скрытием мобильного меню</td>
+							</tr>
+							<tr>
+								<td>tonyMenu.mobile.hide.end</td>
+								<td>После окончания анимаци скрытия мобильного меню</td>
+							</tr>
+						</table>
+					<h4 class="margin-top-40">Служебные классы и аттрибуты:</h4>
+					<table class="table table-bordered table-striped">
+						<tr>
+							<th>Название класса</th>
+							<th>Описание</th>
+							<th>Куда добавляется</th>
+						</tr>
+						<tr>
+							<td>.tonyMenu__initialize</td>
+							<td>Добавляется после инициализации</td>
+							<td>.tonyMenu</td>
+						</tr>
+						<tr>
+							<td>.tonyMenu__item-next-level</td>
+							<td>Добавляется при инициализации эллементам списка li, у которых присутствует вложенный ul</td>
+							<td>li</td>
+						</tr>
+						<tr>
+							<td>.tonyMenu__megamenu-scroll</td>
+							<td>Добавляется к мегаменю если оно не влазит в экран и добавляется скрол</td>
+							<td>.tonyMenu__megamenu</td>
+						</tr>
+						<tr>
+							<td>data-tm-active=[boolean]</td>
+							<td>Добавляется к каждому мегаменю при инициализации и переключается при изменении статуса активности</td>
+							<td>.tonyMenu__megamenu</td>
+						</tr>
+					</table>
+					<h4 class="margin-top-40">Инициализация:</h4>
+					<p>Если на странице находится больше одного меню, то к .tonyMenu добавляем любой
+						дополнительный унакальный класс и инициализируем по нему. Одно меню - одна инициализация.
+						(Не забываем активировать мобильное меню только лиш на одном из меню. [data-tm-mobile])</p>
+					<p class="margin-top-20">.tonyMenu() - jQuery метод инициализации плагина, возвращает обьект плагина (без обёртки jQuery, учитываем это!)</p>
+					<p class="margin-top-20">Пример:</p>
+					<p>var tonyMenu = jQuery('.tonyMenu').tonyMenu(obj); //obj - обьект парамметров </br>tonyMenu.showTonyMenu(); //вызов методов</p>
+				</div>
+			</row>
+		</div>
+
+
+	<!--JS-->
+	<scropt src="../lib/bootstrap/bootstrap.min.js"></scropt>
+	</body>
+</html>

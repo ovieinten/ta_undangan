@@ -1,0 +1,159 @@
+/**
+ * (c) Tonytemplates Ltd, https://www.tonytemplates.com/support@tonytemplates.com
+ */
+
+.clearfix() {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+.display-flex() {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.display-inline-flex() {
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+._flex-center() {
+  justify-content: center;
+  align-items: center;
+}
+._link-color(@color) {
+  &,
+  &:visited,
+  &:active,
+  &:link {
+    color: @color;
+  }
+}
+
+.backface-visibility(@arguments) {
+  -webkit-backface-visibility: @arguments;
+  -moz-backface-visibility: @arguments;
+  -ms-backface-visibility: @arguments;
+  backface-visibility: @arguments;
+}
+
+.translate(@x, @y) {
+  -webkit-transform: translate(@x, @y);
+  -ms-transform: translate(@x, @y); // IE9 only
+  -o-transform: translate(@x, @y);
+  transform: translate(@x, @y);
+}
+.translateX(@x) {
+  -webkit-transform: translateX(@x);
+  -ms-transform: translateX(@x); // IE9 only
+  -o-transform: translateX(@x);
+  transform: translateX(@x);
+}
+.translateY(@y) {
+  -webkit-transform: translateY(@y);
+  -ms-transform: translateY(@y); // IE9 only
+  -o-transform: translateY(@y);
+  transform: translateY(@y);
+}
+
+.rotate(@deg) {
+  -webkit-transform: rotate(@deg);
+  -moz-transform: rotate(@deg);
+  -ms-transform: rotate(@deg);
+  -o-transform: rotate(@deg);
+}
+.drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+  -webkit-box-shadow:	 @x @y @blur @spread rgba(0, 0, 0, @alpha);
+  -moz-box-shadow:	 @x @y @blur @spread rgba(0, 0, 0, @alpha);
+  box-shadow:		     @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+.transition(@arguments) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -ms-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+.transform(@transform) {
+  -webkit-transform: @transform;
+  -moz-transform: @transform;
+  -ms-transform: @transform;
+  -o-transform: @transform;
+  transform: @transform;
+}
+
+.vertical-align {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.horizontal-align {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.radius(@size:10){
+  -webkit-border-radius: @size;
+  -moz-border-radius: @size;
+  border-radius: @size;
+}
+.opacity(@opacity){
+  -moz-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  -webkit-opacity: @opacity;
+  opacity: @opacity;
+  @opperc: @opacity * 100;
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+  filter: ~"alpha(opacity=@{opperc})";
+}
+
+.bg-size(@value:cover){
+  background-size: @value;
+  -webkit-background-size: @value;
+  -o-background-size: @value;
+  -moz-background-size: @value;
+}
+
+.grad(@value1:top, @value2:#000, @value3:#FFF) {
+  background: @value2;
+  background: linear-gradient(@value1, @value2, @value3);
+  background: -o-linear-gradient(@value1, @value2, @value3);
+  background: -ms-linear-gradient(@value1, @value2, @value3);
+  background: -moz-linear-gradient(@value1, @value2, @value3);
+  background: -webkit-linear-gradient(@value1, @value2, @value3);
+}
+
+.scale(@value1){
+  -webkit-transform:scale(@value1);
+  -moz-transform:scale(@value1);
+  -ms-transform:scale(@value1);
+  -o-transform:scale(@value1);
+  transform:scale(@value1);
+}
+
+.box_shadow(@arguments) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -ms-box-shadow: @arguments;
+  -o-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+

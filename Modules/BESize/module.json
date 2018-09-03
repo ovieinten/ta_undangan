@@ -1,0 +1,16 @@
+{
+    "name": "BESize",
+    "alias": "besize",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\BESize\\Providers\\BESizeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

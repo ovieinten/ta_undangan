@@ -1,0 +1,16 @@
+{
+    "name": "BELogin",
+    "alias": "belogin",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\BELogin\\Providers\\BELoginServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

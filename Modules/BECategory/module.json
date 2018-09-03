@@ -1,0 +1,16 @@
+{
+    "name": "BECategory",
+    "alias": "becategory",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\BECategory\\Providers\\BECategoryServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

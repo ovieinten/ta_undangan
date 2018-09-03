@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/bediscount",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\BEDiscount\\Providers\\BEDiscountServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\BEDiscount\\": ""
+        }
+    }
+}

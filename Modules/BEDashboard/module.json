@@ -1,0 +1,16 @@
+{
+    "name": "BEDashboard",
+    "alias": "bedashboard",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\BEDashboard\\Providers\\BEDashboardServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

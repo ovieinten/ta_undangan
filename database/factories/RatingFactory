@@ -1,0 +1,12 @@
+<?php
+
+use Faker\Generator as Faker;
+
+$factory->define(App\Models\Rating::class, function (Faker $faker) {
+    return [
+        'rating' => $faker->randomNumber(['1','2','3','4','5']),
+        'rateable_type' => 'type',
+        'rateable_id' => $faker->randomNumber(['1','2']),
+        'user_id' => $faker->randomNumber(10),
+    ];
+});

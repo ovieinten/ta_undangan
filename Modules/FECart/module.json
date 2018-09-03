@@ -1,0 +1,16 @@
+{
+    "name": "FECart",
+    "alias": "fecart",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\FECart\\Providers\\FECartServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

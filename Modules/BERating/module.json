@@ -1,0 +1,16 @@
+{
+    "name": "BERating",
+    "alias": "berating",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\BERating\\Providers\\BERatingServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}
